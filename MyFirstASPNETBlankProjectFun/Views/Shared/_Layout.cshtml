@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewData["Title"] - Golf Website</title>
+
+    <link rel="icon" type="image/png" href="https://www.google.com/favicon.ico">
+
+
+    <!-- Link to CSS file -->
+    <link href="~/css/site.css" rel="stylesheet">
+
+    <!-- jQuery and Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>My Golf Website</h1>
+        <nav>
+            <a asp-controller="Home" asp-action="Index">Home</a> |
+            <a asp-controller="Home" asp-action="SecondView">Calculator</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        @RenderBody()  <!-- This is where each page's content will be injected -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Harrison Bement - Golf Hobby Web App</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
+

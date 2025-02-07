@@ -1,0 +1,99 @@
+﻿/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Light blue golf theme */
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+h1 {
+    color: #006400; /* Dark green, like a golf course */
+    margin-top: 20px;
+}
+
+h3 {
+    color: #2c3e50;
+    font-size: 1.5em;
+}
+
+/* Navigation */
+/* Navigation */
+nav {
+    background-color: #008000;
+    padding: 10px;
+    text-align: center;
+}
+
+    nav a {
+        display: inline-block; /* Ensures links are clickable */
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        z-index: 1000; /* Places links above any overlapping elements */
+        position: relative;
+    }
+
+        nav a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+
+/* Images */
+img {
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+/* Form Elements */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #006400; /* Dark green */
+    color: white;
+    border: none;
+    padding: 12px 24px; /* Bigger button */
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+    button:hover {
+        background-color: #008000; /* Lighter green */
+    }
+
+/* Error Message */
+#error-message {
+    color: red;
+    font-size: 14px;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    position: relative; /* Prevents covering content */
+    bottom: 0;
+}
